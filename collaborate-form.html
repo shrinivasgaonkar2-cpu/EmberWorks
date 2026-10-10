@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#09131d">
+    <meta name="description" content="Share your details to start a collaboration with EmberWorks.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Start a collaboration | EmberWorks">
+    <meta property="og:description" content="A simple way to start a creative conversation with EmberWorks.">
+    <title>Start a collaboration | EmberWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home-theme.css">
+    <link rel="stylesheet" href="assets/css/collaborate-theme.css">
+    <link rel="stylesheet" href="assets/css/collaborate-form-theme.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="collaborate-document">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="portfolio-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="site-logo" href="index.html" aria-label="EmberWorks, home">EmberWorks<span class="logo-mark">.</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="work.html">My Work</a>
+            <a class="nav-link" href="about.html">About me</a>
+            <a class="nav-link" href="collaborate.html" aria-current="page">Collaborate</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="collaboration-form-page">
+        <section class="collaboration-form-section" aria-labelledby="form-title">
+          <div class="container collaboration-form-layout">
+            <div class="collaboration-form-heading">
+              <p class="eyebrow"><span class="status-dot"></span> A GOOD IDEA STARTS SOMEWHERE</p>
+              <h1 id="form-title">Start a <span>collaboration.</span></h1>
+              <p>Just the basics, and I’ll take it from here.</p>
+              <a class="form-back-link" href="collaborate.html"><span aria-hidden="true">←</span> Back</a>
+            </div>
+
+            <form class="collaboration-form" id="collaboration-form">
+              <div class="form-field">
+                <label for="collab-name">Your name <span aria-hidden="true">*</span></label>
+                <input id="collab-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="collab-city">City <span aria-hidden="true">*</span></label>
+                <input id="collab-city" name="city" type="text" autocomplete="address-level2" required>
+              </div>
+              <div class="form-field">
+                <label for="collab-email">Email address <span aria-hidden="true">*</span></label>
+                <input id="collab-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="collab-phone">Phone <span class="optional-label">OPTIONAL</span></label>
+                <input id="collab-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <p class="form-privacy-note">Your details will be emailed to me so I can follow up. Please don’t include sensitive information.</p>
+              <button class="form-submit" type="submit">
+                <span>Send inquiry</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-status" id="collaboration-form-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+          <span class="form-page-mark" aria-hidden="true">EMBERWORKS / COLLABORATION</span>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <a class="site-logo footer-logo" href="index.html" aria-label="EmberWorks, back to home">EmberWorks<span class="logo-mark">.</span></a>
+          <p class="footer-note">3D simulation and visual effects artist</p>
+          <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

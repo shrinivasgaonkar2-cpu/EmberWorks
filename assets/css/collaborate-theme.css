@@ -1,0 +1,221 @@
+.collaborate-page {
+  overflow: hidden;
+}
+
+.collaborate-hero {
+  position: relative;
+  min-height: min(760px, calc(100svh - 76px));
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  isolation: isolate;
+}
+
+.collaborate-hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 10% 12%;
+  border: 1px solid rgb(178 220 255 / 7%);
+  border-radius: 50%;
+  box-shadow: 0 0 130px rgb(50 151 207 / 11%), inset 0 0 120px rgb(50 151 207 / 5%);
+  content: "";
+  pointer-events: none;
+}
+
+.collaborate-hero-content {
+  position: relative;
+  width: min(100% - 3rem, 1000px);
+  padding-block: 5rem;
+  text-align: center;
+}
+
+.collaborate-hero-content .eyebrow {
+  justify-content: center;
+  color: #c1d9ef;
+}
+
+.collaborate-hero h1 {
+  margin: 1.35rem 0 0;
+  color: #edf6ff;
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 16vw, 13rem);
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  line-height: 0.92;
+  text-shadow: 0 10px 50px rgb(0 8 20 / 40%);
+}
+
+.collaborate-hero h1 span {
+  color: #62e6ff;
+}
+
+.collaborate-invite {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: clamp(2rem, 5vw, 3.25rem);
+  padding: 0.65rem 0.8rem 0.65rem 1rem;
+  border: 1px solid rgb(204 229 250 / 32%);
+  border-radius: 999px;
+  background: rgb(8 20 34 / 60%);
+  color: #e8f5ff;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.11em;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.collaborate-invite:hover {
+  transform: translateY(-2px);
+  border-color: #62e6ff;
+  background: rgb(17 47 65 / 72%);
+  color: #aaf2ff;
+}
+
+.collaborate-invite-arrow {
+  display: grid;
+  width: 1.8rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(98 230 255 / 12%);
+  color: #62e6ff;
+  font-size: 0.9rem;
+}
+
+.collaborate-orbit {
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgb(151 213 255 / 14%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.collaborate-orbit-one {
+  top: 18%;
+  left: 12%;
+  width: 9px;
+  height: 9px;
+  background: #9beeff;
+  box-shadow: 0 0 18px 5px rgb(98 230 255 / 22%);
+}
+
+.collaborate-orbit-two {
+  right: 15%;
+  bottom: 24%;
+  width: 15px;
+  height: 15px;
+  border-color: rgb(175 212 255 / 33%);
+  box-shadow: 0 0 25px rgb(98 230 255 / 15%);
+}
+
+.collaborate-coordinate {
+  position: absolute;
+  right: clamp(1rem, 4vw, 3rem);
+  bottom: 1.5rem;
+  color: rgb(205 226 246 / 52%);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+}
+
+.collaborate-connect {
+  padding-block: clamp(2rem, 5vw, 3.5rem);
+  border-top: 1px solid rgb(188 216 246 / 15%);
+  background: linear-gradient(100deg, rgb(8 17 28 / 48%), rgb(13 27 43 / 32%));
+}
+
+.collaborate-connect-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.collaborate-connect .eyebrow {
+  color: #b9d5ee;
+}
+
+.collaborate-connect .eyebrow-rule {
+  width: 26px;
+  background: #62e6ff;
+}
+
+.collaborate-connect h2 {
+  margin: 0.55rem 0 0;
+  color: #edf6ff;
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 400;
+}
+
+.collaborate-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.collaborate-socials a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgb(188 216 246 / 22%);
+  border-radius: 999px;
+  background: rgb(9 20 33 / 46%);
+  color: #d8e9f8;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
+}
+
+.collaborate-socials a:hover {
+  border-color: rgb(98 230 255 / 58%);
+  background: rgb(17 47 65 / 62%);
+  color: #62e6ff;
+}
+
+.collaborate-socials a span {
+  color: #62e6ff;
+}
+
+@media (max-width: 600px) {
+  .collaborate-hero {
+    min-height: min(680px, calc(100svh - 66px));
+  }
+
+  .collaborate-hero-content {
+    width: calc(100% - 2rem);
+    padding-block: 4rem;
+  }
+
+  .collaborate-hero h1 {
+    font-size: clamp(4.2rem, 18vw, 7rem);
+  }
+
+  .collaborate-hero-content .eyebrow {
+    font-size: 0.56rem;
+  }
+
+  .collaborate-connect-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .collaborate-socials {
+    gap: 0.5rem;
+  }
+
+  .collaborate-coordinate {
+    font-size: 0.48rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collaborate-invite,
+  .collaborate-socials a {
+    transition: none;
+  }
+}

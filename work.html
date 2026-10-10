@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100D09">
+    <meta name="description" content="Explore EmberWorks projects in fire and smoke, fluids, compositing, modeling, and motion.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Work | EmberWorks">
+    <meta property="og:description" content="A collection of 3D simulation and visual effects work made with Blender.">
+    <title>My Work | EmberWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home-theme.css">
+    <script src="projects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="work-document">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="portfolio-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="site-logo" href="index.html" aria-label="EmberWorks, home">EmberWorks<span class="logo-mark">.</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="work.html" aria-current="page">My Work</a>
+            <a class="nav-link" href="about.html">About me</a>
+            <a class="nav-link" href="collaborate.html">Collaborate</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="work-page section" aria-labelledby="work-title">
+          <div class="container">
+            <div class="work-page-heading">
+              <p class="eyebrow"><span class="status-dot"></span> PROJECT ARCHIVE</p>
+              <h1 class="section-title" id="work-title">My <span>Work</span></h1>
+              <p class="work-page-intro">A collection of 3D experiments and visual effects work. More projects coming soon.</p>
+            </div>
+            <div class="work-filters" role="group" aria-label="Filter projects by category">
+              <button class="work-filter is-active" type="button" data-filter="All" aria-pressed="true">All work</button>
+              <button class="work-filter" type="button" data-filter="Fire & Smoke" aria-pressed="false">Fire &amp; Smoke</button>
+              <button class="work-filter" type="button" data-filter="Fluids" aria-pressed="false">Fluids</button>
+              <button class="work-filter" type="button" data-filter="Compositing" aria-pressed="false">Compositing</button>
+              <button class="work-filter" type="button" data-filter="Modeling" aria-pressed="false">Modeling</button>
+              <button class="work-filter" type="button" data-filter="Motion" aria-pressed="false">Motion</button>
+            </div>
+            <div class="featured-grid work-project-grid" id="work-projects" aria-live="polite"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <a class="site-logo footer-logo" href="index.html" aria-label="EmberWorks, back to home">EmberWorks<span class="logo-mark">.</span></a>
+          <p class="footer-note">3D simulation and visual effects artist</p>
+          <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
